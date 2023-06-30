@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit Converter</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            U/C
+        </div>
+        <ul>
+            <li><a href="#length">Length</a></li>
+            <li><a href="#temp">Temperature</a></li>
+            <li><a href="#weigth">Weigth</a></li>
+        </ul>
+    </header>
+    <main class="main-body">
+    <div class="box" id="box">
+        <h1>Unit / Converter</h1>
+        <div class="links">
+            <ul>
+                <li><a href="#length">Length</a></li>
+                <li><a href="#temp">Temperature</a></li>
+                <li><a href="#weigth">Weigth</a></li>
+            </ul>
+        </div>
+        <div class="length" id="length">
+            <div class="main" id="main">
+                <div class="headings">
+                <select name="" id="get" class="value1">
+                    <option value="meter">Meter</option>
+                    <option value="cm">cm</option>
+                    <option value="foot">Foot</option>
+                </select>
+                <select name="" id="set" class="value2">
+                    <option value="meter">Meter</option>
+                    <option value="cm">cm</option>
+                    <option value="foot">Foot</option>
+                </select>
+                </div>
+                <div class="inputs">
+                    <p id="demo" contenteditable="true" class="demo" onkeyup="getlen()" class="red" >0</p>
+                    <p id="inc" class="inc" contenteditable="true" class="red" class="green">0</p>
+                </div>
+            </div>
+        </div> 
+
+        <!-- for temperature -->
+
+        <div class="temp" id="temp">
+            <div class="main">
+                <div class="headings">
+                <span class="value1">Celsius</span>
+                <span class="value2">Fahrenheit</span>
+                </div>
+                <div class="inputs">
+                    <p id="celi" contenteditable="true" class="demo" class="green" class="red" onkeyup="getceli()">0</p>
+                    <p id="fah" class="inc" contenteditable="true"  class="red" class="green" onkeyup="getfah()" >0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weigth" id="weigth">
+            <div id="main" class="main">
+                <div class="headings">
+                <span class="value1">Kg</span>
+                <span class="value2">Grams</span>
+                </div>
+                <div class="inputs">
+                    <p id="kilo" contenteditable="true" class="demo" class="red" onkeyup="getgram()">0</p>
+                    <p id="gram" class="inc" contenteditable="true" class="red" onkeyup="getkilo()">0</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
